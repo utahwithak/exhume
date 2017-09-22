@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8FE8BA421F75426E005ABC8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE8BA411F75426E005ABC8A /* AppDelegate.swift */; };
+		8FE8BA441F75426E005ABC8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE8BA431F75426E005ABC8A /* ViewController.swift */; };
+		8FE8BA461F75426E005ABC8A /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE8BA451F75426E005ABC8A /* Document.swift */; };
+		8FE8BA481F75426E005ABC8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FE8BA471F75426E005ABC8A /* Assets.xcassets */; };
+		8FE8BA4B1F75426E005ABC8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FE8BA491F75426E005ABC8A /* Main.storyboard */; };
+		8FE8BA571F75426E005ABC8A /* ExhumeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE8BA561F75426E005ABC8A /* ExhumeTests.swift */; };
+		8FE8BA621F75426E005ABC8A /* ExhumeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE8BA611F75426E005ABC8A /* ExhumeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8FE8BA531F75426E005ABC8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FE8BA361F75426E005ABC8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FE8BA3D1F75426E005ABC8A;
+			remoteInfo = Exhume;
+		};
+		8FE8BA5E1F75426E005ABC8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FE8BA361F75426E005ABC8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FE8BA3D1F75426E005ABC8A;
+			remoteInfo = Exhume;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8FE8BA3E1F75426E005ABC8A /* Exhume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exhume.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FE8BA411F75426E005ABC8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8FE8BA431F75426E005ABC8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8FE8BA451F75426E005ABC8A /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		8FE8BA471F75426E005ABC8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FE8BA4A1F75426E005ABC8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8FE8BA4C1F75426E005ABC8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FE8BA4D1F75426E005ABC8A /* Exhume.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Exhume.entitlements; sourceTree = "<group>"; };
+		8FE8BA521F75426E005ABC8A /* ExhumeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExhumeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FE8BA561F75426E005ABC8A /* ExhumeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhumeTests.swift; sourceTree = "<group>"; };
+		8FE8BA581F75426E005ABC8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FE8BA5D1F75426E005ABC8A /* ExhumeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExhumeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FE8BA611F75426E005ABC8A /* ExhumeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhumeUITests.swift; sourceTree = "<group>"; };
+		8FE8BA631F75426E005ABC8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FE8BA3B1F75426E005ABC8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FE8BA4F1F75426E005ABC8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FE8BA5A1F75426E005ABC8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8FE8BA351F75426E005ABC8A = {
+			isa = PBXGroup;
+			children = (
+				8FE8BA401F75426E005ABC8A /* Exhume */,
+				8FE8BA551F75426E005ABC8A /* ExhumeTests */,
+				8FE8BA601F75426E005ABC8A /* ExhumeUITests */,
+				8FE8BA3F1F75426E005ABC8A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8FE8BA3F1F75426E005ABC8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FE8BA3E1F75426E005ABC8A /* Exhume.app */,
+				8FE8BA521F75426E005ABC8A /* ExhumeTests.xctest */,
+				8FE8BA5D1F75426E005ABC8A /* ExhumeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FE8BA401F75426E005ABC8A /* Exhume */ = {
+			isa = PBXGroup;
+			children = (
+				8FE8BA411F75426E005ABC8A /* AppDelegate.swift */,
+				8FE8BA431F75426E005ABC8A /* ViewController.swift */,
+				8FE8BA451F75426E005ABC8A /* Document.swift */,
+				8FE8BA471F75426E005ABC8A /* Assets.xcassets */,
+				8FE8BA491F75426E005ABC8A /* Main.storyboard */,
+				8FE8BA4C1F75426E005ABC8A /* Info.plist */,
+				8FE8BA4D1F75426E005ABC8A /* Exhume.entitlements */,
+			);
+			path = Exhume;
+			sourceTree = "<group>";
+		};
+		8FE8BA551F75426E005ABC8A /* ExhumeTests */ = {
+			isa = PBXGroup;
+			children = (
+				8FE8BA561F75426E005ABC8A /* ExhumeTests.swift */,
+				8FE8BA581F75426E005ABC8A /* Info.plist */,
+			);
+			path = ExhumeTests;
+			sourceTree = "<group>";
+		};
+		8FE8BA601F75426E005ABC8A /* ExhumeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8FE8BA611F75426E005ABC8A /* ExhumeUITests.swift */,
+				8FE8BA631F75426E005ABC8A /* Info.plist */,
+			);
+			path = ExhumeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FE8BA3D1F75426E005ABC8A /* Exhume */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FE8BA661F75426E005ABC8A /* Build configuration list for PBXNativeTarget "Exhume" */;
+			buildPhases = (
+				8FE8BA3A1F75426E005ABC8A /* Sources */,
+				8FE8BA3B1F75426E005ABC8A /* Frameworks */,
+				8FE8BA3C1F75426E005ABC8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Exhume;
+			productName = Exhume;
+			productReference = 8FE8BA3E1F75426E005ABC8A /* Exhume.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8FE8BA511F75426E005ABC8A /* ExhumeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FE8BA691F75426E005ABC8A /* Build configuration list for PBXNativeTarget "ExhumeTests" */;
+			buildPhases = (
+				8FE8BA4E1F75426E005ABC8A /* Sources */,
+				8FE8BA4F1F75426E005ABC8A /* Frameworks */,
+				8FE8BA501F75426E005ABC8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FE8BA541F75426E005ABC8A /* PBXTargetDependency */,
+			);
+			name = ExhumeTests;
+			productName = ExhumeTests;
+			productReference = 8FE8BA521F75426E005ABC8A /* ExhumeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8FE8BA5C1F75426E005ABC8A /* ExhumeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FE8BA6C1F75426E005ABC8A /* Build configuration list for PBXNativeTarget "ExhumeUITests" */;
+			buildPhases = (
+				8FE8BA591F75426E005ABC8A /* Sources */,
+				8FE8BA5A1F75426E005ABC8A /* Frameworks */,
+				8FE8BA5B1F75426E005ABC8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FE8BA5F1F75426E005ABC8A /* PBXTargetDependency */,
+			);
+			name = ExhumeUITests;
+			productName = ExhumeUITests;
+			productReference = 8FE8BA5D1F75426E005ABC8A /* ExhumeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FE8BA361F75426E005ABC8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Datum Apps";
+				TargetAttributes = {
+					8FE8BA3D1F75426E005ABC8A = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					8FE8BA511F75426E005ABC8A = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8FE8BA3D1F75426E005ABC8A;
+					};
+					8FE8BA5C1F75426E005ABC8A = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8FE8BA3D1F75426E005ABC8A;
+					};
+				};
+			};
+			buildConfigurationList = 8FE8BA391F75426E005ABC8A /* Build configuration list for PBXProject "Exhume" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8FE8BA351F75426E005ABC8A;
+			productRefGroup = 8FE8BA3F1F75426E005ABC8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FE8BA3D1F75426E005ABC8A /* Exhume */,
+				8FE8BA511F75426E005ABC8A /* ExhumeTests */,
+				8FE8BA5C1F75426E005ABC8A /* ExhumeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FE8BA3C1F75426E005ABC8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FE8BA481F75426E005ABC8A /* Assets.xcassets in Resources */,
+				8FE8BA4B1F75426E005ABC8A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FE8BA501F75426E005ABC8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FE8BA5B1F75426E005ABC8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FE8BA3A1F75426E005ABC8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FE8BA441F75426E005ABC8A /* ViewController.swift in Sources */,
+				8FE8BA421F75426E005ABC8A /* AppDelegate.swift in Sources */,
+				8FE8BA461F75426E005ABC8A /* Document.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FE8BA4E1F75426E005ABC8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FE8BA571F75426E005ABC8A /* ExhumeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FE8BA591F75426E005ABC8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FE8BA621F75426E005ABC8A /* ExhumeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8FE8BA541F75426E005ABC8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FE8BA3D1F75426E005ABC8A /* Exhume */;
+			targetProxy = 8FE8BA531F75426E005ABC8A /* PBXContainerItemProxy */;
+		};
+		8FE8BA5F1F75426E005ABC8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FE8BA3D1F75426E005ABC8A /* Exhume */;
+			targetProxy = 8FE8BA5E1F75426E005ABC8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8FE8BA491F75426E005ABC8A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FE8BA4A1F75426E005ABC8A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8FE8BA641F75426E005ABC8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8FE8BA651F75426E005ABC8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		8FE8BA671F75426E005ABC8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Exhume/Exhume.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QV4QS82KBT;
+				INFOPLIST_FILE = Exhume/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.datumapps.Exhume;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		8FE8BA681F75426E005ABC8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Exhume/Exhume.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QV4QS82KBT;
+				INFOPLIST_FILE = Exhume/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.datumapps.Exhume;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		8FE8BA6A1F75426E005ABC8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QV4QS82KBT;
+				INFOPLIST_FILE = ExhumeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.datumapps.ExhumeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Exhume.app/Contents/MacOS/Exhume";
+			};
+			name = Debug;
+		};
+		8FE8BA6B1F75426E005ABC8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QV4QS82KBT;
+				INFOPLIST_FILE = ExhumeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.datumapps.ExhumeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Exhume.app/Contents/MacOS/Exhume";
+			};
+			name = Release;
+		};
+		8FE8BA6D1F75426E005ABC8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QV4QS82KBT;
+				INFOPLIST_FILE = ExhumeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.datumapps.ExhumeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = Exhume;
+			};
+			name = Debug;
+		};
+		8FE8BA6E1F75426E005ABC8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QV4QS82KBT;
+				INFOPLIST_FILE = ExhumeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.datumapps.ExhumeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = Exhume;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FE8BA391F75426E005ABC8A /* Build configuration list for PBXProject "Exhume" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FE8BA641F75426E005ABC8A /* Debug */,
+				8FE8BA651F75426E005ABC8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FE8BA661F75426E005ABC8A /* Build configuration list for PBXNativeTarget "Exhume" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FE8BA671F75426E005ABC8A /* Debug */,
+				8FE8BA681F75426E005ABC8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FE8BA691F75426E005ABC8A /* Build configuration list for PBXNativeTarget "ExhumeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FE8BA6A1F75426E005ABC8A /* Debug */,
+				8FE8BA6B1F75426E005ABC8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FE8BA6C1F75426E005ABC8A /* Build configuration list for PBXNativeTarget "ExhumeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FE8BA6D1F75426E005ABC8A /* Debug */,
+				8FE8BA6E1F75426E005ABC8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8FE8BA361F75426E005ABC8A /* Project object */;
+}
