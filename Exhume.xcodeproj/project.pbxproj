@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F7C520D1F7BF2BE004A91BC /* CatmullRom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7C520C1F7BF2BE004A91BC /* CatmullRom.swift */; };
+		8F7C52101F7BF2D8004A91BC /* CGPoint+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7C520F1F7BF2D8004A91BC /* CGPoint+Additions.swift */; };
+		8F7C52121F7BF728004A91BC /* ArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7C52111F7BF728004A91BC /* ArrowView.swift */; };
 		8FC2C43C1F7AB6CB005BD99D /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2C43B1F7AB6CB005BD99D /* Section.swift */; };
 		8FC2C43F1F7ABC3A005BD99D /* Call.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2C43E1F7ABC3A005BD99D /* Call.swift */; };
 		8FC2C4411F7B23E5005BD99D /* SectionViewsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2C4401F7B23E5005BD99D /* SectionViewsContainer.swift */; };
@@ -87,6 +90,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8F7C520C1F7BF2BE004A91BC /* CatmullRom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatmullRom.swift; sourceTree = "<group>"; };
+		8F7C520F1F7BF2D8004A91BC /* CGPoint+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Additions.swift"; sourceTree = "<group>"; };
+		8F7C52111F7BF728004A91BC /* ArrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowView.swift; sourceTree = "<group>"; };
 		8FC2C43B1F7AB6CB005BD99D /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		8FC2C43E1F7ABC3A005BD99D /* Call.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Call.swift; sourceTree = "<group>"; };
 		8FC2C4401F7B23E5005BD99D /* SectionViewsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewsContainer.swift; sourceTree = "<group>"; };
@@ -173,6 +179,9 @@
 				8FC2C43E1F7ABC3A005BD99D /* Call.swift */,
 				8FC2C4401F7B23E5005BD99D /* SectionViewsContainer.swift */,
 				8FC2C4421F7B245B005BD99D /* SectionView.swift */,
+				8F7C520C1F7BF2BE004A91BC /* CatmullRom.swift */,
+				8F7C52111F7BF728004A91BC /* ArrowView.swift */,
+				8F7C520F1F7BF2D8004A91BC /* CGPoint+Additions.swift */,
 				8FE8BA491F75426E005ABC8A /* Main.storyboard */,
 				8FE8BA471F75426E005ABC8A /* Assets.xcassets */,
 				8FE8BA4C1F75426E005ABC8A /* Info.plist */,
@@ -370,8 +379,11 @@
 				8FE8BA441F75426E005ABC8A /* ViewController.swift in Sources */,
 				8FC2C43F1F7ABC3A005BD99D /* Call.swift in Sources */,
 				8FC2C4431F7B245B005BD99D /* SectionView.swift in Sources */,
+				8F7C520D1F7BF2BE004A91BC /* CatmullRom.swift in Sources */,
+				8F7C52101F7BF2D8004A91BC /* CGPoint+Additions.swift in Sources */,
 				8FC2C4411F7B23E5005BD99D /* SectionViewsContainer.swift in Sources */,
 				8FE8BA421F75426E005ABC8A /* AppDelegate.swift in Sources */,
+				8F7C52121F7BF728004A91BC /* ArrowView.swift in Sources */,
 				8FE8BA951F754847005ABC8A /* FileStream.swift in Sources */,
 				8FC2C43C1F7AB6CB005BD99D /* Section.swift in Sources */,
 				8FE8BA461F75426E005ABC8A /* Document.swift in Sources */,

@@ -42,7 +42,9 @@ class Section: NSObject {
             if inst.isCall {
 
                 if inst.opString.hasPrefix("0x"), let converted = Int(inst.opString.dropFirst(2), radix:16) {
-                    childSections.append(Section(start: UInt64(converted)))
+                    let outSection  = Section(start: UInt64(converted))
+                    calls.append(Call(from: self, to: outSection))
+                    childSections.append(outSection)
                 }
             }
         }

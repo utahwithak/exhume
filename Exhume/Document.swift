@@ -31,9 +31,7 @@ class Document: NSDocument {
         // Returns the Storyboard that contains your Document window.
         let storyboard = NSStoryboard(name: NSStoryboard.Name("Main"), bundle: nil)
         let windowController = storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier("Document Window Controller")) as! NSWindowController
-        let documentController = storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier("documentViewController")) as! ViewController
-        windowController.window?.contentViewController = documentController
-        documentController.representedObject = self
+        windowController.window?.contentViewController?.representedObject = self
         self.addWindowController(windowController)
     }
 

@@ -13,13 +13,18 @@ class ViewController: NSViewController {
     @IBOutlet weak var scrollView: NSScrollView!
     var container: SectionViewsContainer!
 
+    var sectionViews = [UInt64: SectionView]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        container = SectionViewsContainer(frame: NSRect(x: 0, y: 0, width: 4096, height: 4096))
+        container = SectionViewsContainer(frame: NSRect(x: 0, y: 0, width: 10000, height: 10000))
         container.wantsLayer = true
         container.layer?.backgroundColor = NSColor.lightGray.cgColor
         scrollView.documentView = container
+        scrollView.allowsMagnification = true
+        scrollView.hasHorizontalScroller = true
+        scrollView.hasVerticalScroller = true
 
     }
 
@@ -39,6 +44,8 @@ class ViewController: NSViewController {
             v.removeFromSuperview()
         }
 
+        sectionViews.removeAll()
+
         if let document = document {
             var xLine = 0
             for (index,section) in document.sections.values.enumerated()  {
@@ -47,6 +54,7 @@ class ViewController: NSViewController {
 
                 sectionView.representedObject = section
 
+                sectionViews[section.start] = sectionView
                 container.addSubview(sectionView.view)
 
                 childViewControllers.append(sectionView)
@@ -55,9 +63,40 @@ class ViewController: NSViewController {
                     xLine += 1
                 }
 
-                sectionView.view.frame = NSRect(x: xLine * 200, y: (index % 20) * 100, width: 150, height: 75)
+                sectionView.view.frame = NSRect(x: xLine * 400, y: (index % 20) * 300 , width: 300, height: 150)
 
             }
+        }
+
+        var boundingBox = view.frame
+
+        for (_, sectionVC) in sectionViews {
+            boundingBox = boundingBox.union(sectionVC.view.frame)
+            guard let section = sectionVC.representedObject as? Section else {
+                sectionVC.view.removeFromSuperview()
+                sectionVC.removeFromParentViewController()
+                continue
+            }
+
+            for call in section.calls {
+                guard let dest = call.destination else {
+                    continue
+                }
+
+                print("Found Dest!")
+                guard let destView = sectionViews[dest.start] else {
+                    continue
+                }
+                print("Found dest View!")
+
+                let arrowView = ArrowView(from: sectionVC, to: destView)
+                container.arrowViews.append(arrowView)
+
+            }
+            view.frame = boundingBox
+            container.arrowViews.forEach({ $0.refreshPath()})
+
+
         }
 
     }

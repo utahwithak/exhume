@@ -11,4 +11,9 @@ import Foundation
 class Call {
     weak var source: Section?
     weak var destination: Section?
+
+    init(from source: Section, to: Section) {
+        self.source = source
+        destination = to
+    }
 }
