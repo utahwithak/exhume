@@ -1,0 +1,3 @@
+[submodule "External/swiftstone"]
+	path = External/swiftstone
+	url = https://utahwithak@github.com/utahwithak/SwiftStone

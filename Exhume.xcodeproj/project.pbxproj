@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8FC2C43C1F7AB6CB005BD99D /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2C43B1F7AB6CB005BD99D /* Section.swift */; };
+		8FC2C43F1F7ABC3A005BD99D /* Call.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2C43E1F7ABC3A005BD99D /* Call.swift */; };
+		8FC2C4411F7B23E5005BD99D /* SectionViewsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2C4401F7B23E5005BD99D /* SectionViewsContainer.swift */; };
+		8FC2C4431F7B245B005BD99D /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2C4421F7B245B005BD99D /* SectionView.swift */; };
 		8FE8BA421F75426E005ABC8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE8BA411F75426E005ABC8A /* AppDelegate.swift */; };
 		8FE8BA441F75426E005ABC8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE8BA431F75426E005ABC8A /* ViewController.swift */; };
 		8FE8BA461F75426E005ABC8A /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE8BA451F75426E005ABC8A /* Document.swift */; };
@@ -14,6 +18,12 @@
 		8FE8BA4B1F75426E005ABC8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FE8BA491F75426E005ABC8A /* Main.storyboard */; };
 		8FE8BA571F75426E005ABC8A /* ExhumeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE8BA561F75426E005ABC8A /* ExhumeTests.swift */; };
 		8FE8BA621F75426E005ABC8A /* ExhumeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE8BA611F75426E005ABC8A /* ExhumeUITests.swift */; };
+		8FE8BA7C1F754412005ABC8A /* SwiftStone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE8BA771F754402005ABC8A /* SwiftStone.framework */; };
+		8FE8BA7D1F754412005ABC8A /* SwiftStone.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE8BA771F754402005ABC8A /* SwiftStone.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8FE8BA911F75455F005ABC8A /* Capstone.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE8BA8F1F75455F005ABC8A /* Capstone.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8FE8BA941F754847005ABC8A /* Stream+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE8BA921F754847005ABC8A /* Stream+Additions.swift */; };
+		8FE8BA951F754847005ABC8A /* FileStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE8BA931F754847005ABC8A /* FileStream.swift */; };
+		8FE8BA971F754862005ABC8A /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE8BA961F754862005ABC8A /* Header.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +41,56 @@
 			remoteGlobalIDString = 8FE8BA3D1F75426E005ABC8A;
 			remoteInfo = Exhume;
 		};
+		8FE8BA761F754402005ABC8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FE8BA701F754402005ABC8A /* SwiftStone.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8F4E5F801F74912700FA572A;
+			remoteInfo = SwiftStone;
+		};
+		8FE8BA781F754402005ABC8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FE8BA701F754402005ABC8A /* SwiftStone.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8F4E5F891F74912700FA572A;
+			remoteInfo = SwiftStoneTests;
+		};
+		8FE8BA7A1F75440A005ABC8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FE8BA701F754402005ABC8A /* SwiftStone.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F4E5F7F1F74912700FA572A;
+			remoteInfo = SwiftStone;
+		};
+		8FE8BA7E1F754412005ABC8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FE8BA701F754402005ABC8A /* SwiftStone.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F4E5F7F1F74912700FA572A;
+			remoteInfo = SwiftStone;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8FE8BA801F754412005ABC8A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8FE8BA7D1F754412005ABC8A /* SwiftStone.framework in Embed Frameworks */,
+				8FE8BA911F75455F005ABC8A /* Capstone.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		8FC2C43B1F7AB6CB005BD99D /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		8FC2C43E1F7ABC3A005BD99D /* Call.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Call.swift; sourceTree = "<group>"; };
+		8FC2C4401F7B23E5005BD99D /* SectionViewsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewsContainer.swift; sourceTree = "<group>"; };
+		8FC2C4421F7B245B005BD99D /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 		8FE8BA3E1F75426E005ABC8A /* Exhume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exhume.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE8BA411F75426E005ABC8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FE8BA431F75426E005ABC8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +105,11 @@
 		8FE8BA5D1F75426E005ABC8A /* ExhumeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExhumeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE8BA611F75426E005ABC8A /* ExhumeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhumeUITests.swift; sourceTree = "<group>"; };
 		8FE8BA631F75426E005ABC8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FE8BA701F754402005ABC8A /* SwiftStone.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftStone.xcodeproj; path = External/swiftstone/SwiftStone.xcodeproj; sourceTree = "<group>"; };
+		8FE8BA8F1F75455F005ABC8A /* Capstone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Capstone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FE8BA921F754847005ABC8A /* Stream+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stream+Additions.swift"; sourceTree = "<group>"; };
+		8FE8BA931F754847005ABC8A /* FileStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStream.swift; sourceTree = "<group>"; };
+		8FE8BA961F754862005ABC8A /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FE8BA7C1F754412005ABC8A /* SwiftStone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +141,9 @@
 		8FE8BA351F75426E005ABC8A = {
 			isa = PBXGroup;
 			children = (
+				8FE8BA8F1F75455F005ABC8A /* Capstone.framework */,
 				8FE8BA401F75426E005ABC8A /* Exhume */,
+				8FE8BA701F754402005ABC8A /* SwiftStone.xcodeproj */,
 				8FE8BA551F75426E005ABC8A /* ExhumeTests */,
 				8FE8BA601F75426E005ABC8A /* ExhumeUITests */,
 				8FE8BA3F1F75426E005ABC8A /* Products */,
@@ -101,8 +166,15 @@
 				8FE8BA411F75426E005ABC8A /* AppDelegate.swift */,
 				8FE8BA431F75426E005ABC8A /* ViewController.swift */,
 				8FE8BA451F75426E005ABC8A /* Document.swift */,
-				8FE8BA471F75426E005ABC8A /* Assets.xcassets */,
+				8FE8BA921F754847005ABC8A /* Stream+Additions.swift */,
+				8FE8BA931F754847005ABC8A /* FileStream.swift */,
+				8FE8BA961F754862005ABC8A /* Header.swift */,
+				8FC2C43B1F7AB6CB005BD99D /* Section.swift */,
+				8FC2C43E1F7ABC3A005BD99D /* Call.swift */,
+				8FC2C4401F7B23E5005BD99D /* SectionViewsContainer.swift */,
+				8FC2C4421F7B245B005BD99D /* SectionView.swift */,
 				8FE8BA491F75426E005ABC8A /* Main.storyboard */,
+				8FE8BA471F75426E005ABC8A /* Assets.xcassets */,
 				8FE8BA4C1F75426E005ABC8A /* Info.plist */,
 				8FE8BA4D1F75426E005ABC8A /* Exhume.entitlements */,
 			);
@@ -127,6 +199,15 @@
 			path = ExhumeUITests;
 			sourceTree = "<group>";
 		};
+		8FE8BA711F754402005ABC8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FE8BA771F754402005ABC8A /* SwiftStone.framework */,
+				8FE8BA791F754402005ABC8A /* SwiftStoneTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,10 +218,13 @@
 				8FE8BA3A1F75426E005ABC8A /* Sources */,
 				8FE8BA3B1F75426E005ABC8A /* Frameworks */,
 				8FE8BA3C1F75426E005ABC8A /* Resources */,
+				8FE8BA801F754412005ABC8A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8FE8BA7B1F75440A005ABC8A /* PBXTargetDependency */,
+				8FE8BA7F1F754412005ABC8A /* PBXTargetDependency */,
 			);
 			name = Exhume;
 			productName = Exhume;
@@ -220,6 +304,12 @@
 			mainGroup = 8FE8BA351F75426E005ABC8A;
 			productRefGroup = 8FE8BA3F1F75426E005ABC8A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8FE8BA711F754402005ABC8A /* Products */;
+					ProjectRef = 8FE8BA701F754402005ABC8A /* SwiftStone.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8FE8BA3D1F75426E005ABC8A /* Exhume */,
@@ -228,6 +318,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8FE8BA771F754402005ABC8A /* SwiftStone.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftStone.framework;
+			remoteRef = 8FE8BA761F754402005ABC8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8FE8BA791F754402005ABC8A /* SwiftStoneTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftStoneTests.xctest;
+			remoteRef = 8FE8BA781F754402005ABC8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8FE8BA3C1F75426E005ABC8A /* Resources */ = {
@@ -261,8 +368,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FE8BA441F75426E005ABC8A /* ViewController.swift in Sources */,
+				8FC2C43F1F7ABC3A005BD99D /* Call.swift in Sources */,
+				8FC2C4431F7B245B005BD99D /* SectionView.swift in Sources */,
+				8FC2C4411F7B23E5005BD99D /* SectionViewsContainer.swift in Sources */,
 				8FE8BA421F75426E005ABC8A /* AppDelegate.swift in Sources */,
+				8FE8BA951F754847005ABC8A /* FileStream.swift in Sources */,
+				8FC2C43C1F7AB6CB005BD99D /* Section.swift in Sources */,
 				8FE8BA461F75426E005ABC8A /* Document.swift in Sources */,
+				8FE8BA971F754862005ABC8A /* Header.swift in Sources */,
+				8FE8BA941F754847005ABC8A /* Stream+Additions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +408,16 @@
 			isa = PBXTargetDependency;
 			target = 8FE8BA3D1F75426E005ABC8A /* Exhume */;
 			targetProxy = 8FE8BA5E1F75426E005ABC8A /* PBXContainerItemProxy */;
+		};
+		8FE8BA7B1F75440A005ABC8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftStone;
+			targetProxy = 8FE8BA7A1F75440A005ABC8A /* PBXContainerItemProxy */;
+		};
+		8FE8BA7F1F754412005ABC8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftStone;
+			targetProxy = 8FE8BA7E1F754412005ABC8A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -418,6 +542,7 @@
 		8FE8BA671F75426E005ABC8A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Exhume/Exhume.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -434,6 +559,7 @@
 		8FE8BA681F75426E005ABC8A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Exhume/Exhume.entitlements;
 				CODE_SIGN_STYLE = Automatic;

@@ -7,13 +7,21 @@
 //
 
 import Cocoa
+import SwiftStone
 
 class Document: NSDocument {
 
-    override init() {
+    private var stream: FileStream!
+
+    public private(set) var sections = [UInt64: Section]()
+
+    @objc dynamic var rawAsm: String = ""
+
+
+    private override init() {
         super.init()
-        // Add your subclass-specific initialization here.
     }
+
 
     override class var autosavesInPlace: Bool {
         return true
@@ -23,20 +31,52 @@ class Document: NSDocument {
         // Returns the Storyboard that contains your Document window.
         let storyboard = NSStoryboard(name: NSStoryboard.Name("Main"), bundle: nil)
         let windowController = storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier("Document Window Controller")) as! NSWindowController
+        let documentController = storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier("documentViewController")) as! ViewController
+        windowController.window?.contentViewController = documentController
+        documentController.representedObject = self
         self.addWindowController(windowController)
     }
 
     override func data(ofType typeName: String) throws -> Data {
-        // Insert code here to write your document to data of the specified type. If outError != nil, ensure that you create and set an appropriate error when returning nil.
-        // You can also choose to override fileWrapperOfType:error:, writeToURL:ofType:error:, or writeToURL:ofType:forSaveOperation:originalContentsURL:error: instead.
-        throw NSError(domain: NSOSStatusErrorDomain, code: unimpErr, userInfo: nil)
+        return self.stream.data
     }
 
-    override func read(from data: Data, ofType typeName: String) throws {
-        // Insert code here to read your document from the given data of the specified type. If outError != nil, ensure that you create and set an appropriate error when returning false.
-        // You can also choose to override readFromFileWrapper:ofType:error: or readFromURL:ofType:error: instead.
-        // If you override either of these, you should also override -isEntireFileLoaded to return false if the contents are lazily loaded.
-        throw NSError(domain: NSOSStatusErrorDomain, code: unimpErr, userInfo: nil)
+    override func read(from url: URL, ofType typeName: String) throws {
+        stream = try FileStream(forReadingAt: url)
+        guard let exe = Header(from: stream) else {
+            throw NSError(domain: "com.datumapps.exeume", code: -1, userInfo: [NSLocalizedDescriptionKey:NSLocalizedString("Invalid EXE File", comment: "Error when attempting to open an exe that doesn't work")])
+        }
+        
+        Swift.print("exe:\(exe)")
+        Swift.print("entry point:\(exe.entryPoint)")
+
+        let engine = try SwiftStone(arch: .x86, mode: .x86_16Bit)
+        engine.detail = true
+        engine.syntax = .intel
+
+        let converter = engine.converter(for: stream.data)
+
+        let rootSection = Section(start: exe.entryPoint)
+        sections[exe.entryPoint] = rootSection
+
+        var sectionsToLoad = Set<UInt64>()
+        sectionsToLoad.insert(exe.entryPoint)
+        while let any = sectionsToLoad.popFirst(), let section = sections[any] {
+            section.load(from: converter)
+
+            let children = section.loadCalls()
+            for child in children {
+                if sections[child.start] == nil {
+                    sections[child.start] = child
+                    sectionsToLoad.insert(child.start)
+                }
+            }
+        }
+
+
+
+        rawAsm = rootSection.instructions.map({ $0.asmLine }).joined(separator:"\n")
+
     }
 
 
