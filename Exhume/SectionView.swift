@@ -13,10 +13,16 @@ class SectionView: NSViewController {
 
     @IBOutlet weak var sectionTitle: NSTextField!
 
+    var isRoot: Bool = false {
+        didSet {
+            view.layer?.backgroundColor = isRoot ? NSColor.green.cgColor : NSColor.white.cgColor
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.layer?.backgroundColor = NSColor.white.cgColor
+        view.layer?.backgroundColor = isRoot ? NSColor.green.cgColor : NSColor.white.cgColor
         view.layer?.cornerRadius = 12
         view.layer?.borderColor = NSColor.darkGray.cgColor
         let dropShadow = NSShadow()

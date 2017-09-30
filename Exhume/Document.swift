@@ -17,6 +17,7 @@ class Document: NSDocument {
 
     @objc dynamic var rawAsm: String = ""
 
+    var rootSection: Section!
 
     private override init() {
         super.init()
@@ -54,7 +55,7 @@ class Document: NSDocument {
 
         let converter = engine.converter(for: stream.data)
 
-        let rootSection = Section(start: exe.entryPoint)
+        rootSection = Section(start: exe.entryPoint)
         sections[exe.entryPoint] = rootSection
 
         var sectionsToLoad = Set<UInt64>()

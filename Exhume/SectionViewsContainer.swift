@@ -14,7 +14,6 @@ class SectionViewsContainer: NSView {
 
     var selectedView: NSView?
 
-    
     override func mouseDown(with event: NSEvent) {
         let location = convert(event.locationInWindow, from: nil)
         guard let view = viewUnder(point: location) else {

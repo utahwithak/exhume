@@ -46,26 +46,55 @@ class ViewController: NSViewController {
 
         sectionViews.removeAll()
 
-        if let document = document {
-            var xLine = 0
-            for (index,section) in document.sections.values.enumerated()  {
+        if let document = document, let rootSection = document.rootSection {
 
-                let sectionView = storyboard?.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier("sectionView")) as! SectionView
 
-                sectionView.representedObject = section
+            let sectionView = storyboard?.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier("sectionView")) as! SectionView
 
-                sectionViews[section.start] = sectionView
-                container.addSubview(sectionView.view)
+            sectionView.representedObject = rootSection
+            sectionView.view.frame = NSRect(x: 100, y: 502, width: 300, height: 150)
 
-                childViewControllers.append(sectionView)
+            sectionViews[rootSection.start] = sectionView
+            sectionView.isRoot = true
 
-                if index % 20 == 0 {
-                    xLine += 1
+            container.addSubview(sectionView.view)
+            childViewControllers.append(sectionView)
+
+            var viewsToVisit = [SectionView]()
+            viewsToVisit.append(sectionView)
+
+            while let toVisit = viewsToVisit.popLast() {
+
+                let callCount = toVisit.section!.calls.count
+
+                for (index, dest) in toVisit.section!.calls.enumerated() {
+
+                    guard let destination = dest.destination else {
+                        continue
+                    }
+
+                    let childView = storyboard?.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier("sectionView")) as! SectionView
+
+                    childView.representedObject = destination
+                    let bottomY = 500 + ((CGFloat(callCount) - CGFloat(index)) * CGFloat(30))
+                    childView.view.frame = NSRect(x: toVisit.view.frame.maxX + CGFloat(50 * (index + 1)), y: bottomY, width: 300, height: 150)
+
+                    sectionViews[destination.start] = childView
+
+                    container.addSubview(childView.view)
+                    childViewControllers.append(childView)
+
+                    viewsToVisit.append(childView)
+
+
+
                 }
 
-                sectionView.view.frame = NSRect(x: xLine * 400, y: (index % 20) * 300 , width: 300, height: 150)
+
 
             }
+
+
         }
 
         var boundingBox = view.frame
@@ -83,11 +112,9 @@ class ViewController: NSViewController {
                     continue
                 }
 
-                print("Found Dest!")
                 guard let destView = sectionViews[dest.start] else {
                     continue
                 }
-                print("Found dest View!")
 
                 let arrowView = ArrowView(from: sectionVC, to: destView)
                 container.arrowViews.append(arrowView)
